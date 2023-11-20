@@ -7,17 +7,18 @@ int main()
 	do
 	{
 		system("cls");
-		std::cout << "----------------------------------" << std::endl
-			<< "               Menu              " << std::endl
-			<< "----------------------------------" << std::endl
-			<< "Number of elements in keeper : [" << Konten.GetSize() << "]" << std::endl
-			<< "[1] Append" << std::endl
-			<< "[2] Remove" << std::endl
-			<< "[3] Save in file" << std::endl
-			<< "[4] Load from file" << std::endl
-			<< "[5] Change data" << std::endl
-			<< "[6] Show data" << std::endl
-			<< "[0] Exit" << std::endl;
+		std::cout << "***************************" << std::endl
+			<< "         Menu           " << std::endl
+			<< "***************************" << std::endl
+			<< "Number of elements in KEEPER : [" << Konten.GetSize() << "]" << std::endl
+			<< "[1] Append element" << std::endl
+			<< "[2] Remove element" << std::endl
+			<< "[3] Save all in file" << std::endl
+			<< "[4] Load all from file" << std::endl
+			<< "[5] Change element" << std::endl
+			<< "[6] Show all data" << std::endl
+			<< "[0] If u want exit" << std::endl;
+
 		std::cin >> menu;
 		system("cls");
 		switch (menu)

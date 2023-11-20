@@ -1,0 +1,5 @@
+1
+Max Makhonov
+SUAI
+First commit on SVN
+svn commit -m"New file"

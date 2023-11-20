@@ -1,30 +1,31 @@
 #include "Program.h"
 
 Program::Program() {
-	std::cout << "Append of program";
+	std::cout << "Append of program ";
 	try {
 		SetType(3);
 		int hours, minutes;
 		std::cout << "Enter day like (Monday): ";
 		std::cin.ignore(256, '\n');
 		getline(std::cin, day);
-		if (day != "Monday" && day != "Tuesday" && day != "Wednesday" && day != "Thursday" && day != "Friday" && day != "Saturday" && day != "Sunday") {
-			throw (std::string)"Day can not be empty";
+		if (day != "Monday " && day != "Tuesday " && day != "Wednesday " && day != "Thursday " && day != "Friday " && day != "Saturday " && day != "Sunday ") {
+			throw (std::string)"Day can not be empty ";
 		}
 		std::cout << "Enter time like (10:43): ";
 		std::cin >> hours >> minutes;
 		if ((hours > 24 || hours < 0) || (minutes > 60 || minutes < 0)) {
-			throw (std::string)"Incorrect type of time";
+			throw (std::string)"Incorrect type of time ";
 		}
-		time = std::to_string(hours) + ":" + std::to_string(minutes);
+		time = std::to_string(hours) + ": " + std::to_string(minutes);
 		std::cout << "Enter name of report: ";
 		std::cin.ignore(256, '\n');
 		getline(std::cin, name);
 		if (name == "") {
-			throw (std::string)"Name can not be empty";
+			throw (std::string)"Name can not be empty ";
 		}
 		SetError(false);
 	}
+
 	catch (std::string err) {
 		std::cout << "Error" + err;
 		SetError(true);
